@@ -21,6 +21,7 @@
     <p class="text-center  text-dark">__Login/Signup to continue__</p>
 <!--  -->
 <div class="container">
+<form action="function.php" method = "POST"> 
   <div class="row text-center">
     <div class="col-md-6">
       <div class="form-floating mb-3">
@@ -52,7 +53,7 @@
    </div>
   <!--  -->
 </div>
-
+</form>
 </div>
 
 <?php include_once "footer.php"; ?>

@@ -52,26 +52,26 @@
     <p class="text-center  text-dark">Porro eveniet, autem ipsam vitae consequatur!</p>
 <!--  -->
 <div class="container">
+  <form  action="function.php" method="POST">
   <div class="row">
-       <form  action="function.php" method="POST">
-
     <div class="col-md-6">
+     
       <div class="form-floating mb-3">
-        <input type="text" class="form-control"placeholder="First name">
+        <input type="text"name="username" class="form-control"placeholder="First name">
         <label>First name</label>
       </div>
       <div class="form-floating">
-        <input type="number" class="form-control" placeholder="Phone">
+        <input type="number" class="form-control" name="userphone" placeholder="Phone">
         <label>Phone</label>
       </div>
     </div>
     <div class="col-md-6">
        <div class="form-floating mb-3">
-        <input type="text" class="form-control" placeholder="Last name">
+        <input type="text" class="form-control" name="username" placeholder="Last name">
         <label>Last name</label>
       </div>
       <div class="form-floating">
-        <input type="email" class="form-control"  placeholder="name@example.com">
+        <input type="email" class="form-control"  name="useremail" placeholder="name@example.com">
         <label>Email</label>
       </div>
     </div>
@@ -81,12 +81,12 @@
     <label>Message</label>
   </div>
   <div class="container text-center  ">
-  <button type="submit" class="btn btn-warning btn-lg mt-3 mb-3">Send A Message</button></div>
+  <button type="submit" name="formsubmit" class="btn btn-warning btn-lg mt-3 mb-3">Send A Message</button></div>
    </div>
   <!--  -->
-</form>
-</div>
 
+</div>
+</form>
 </div>
 
 <?php include_once "footer.php"; ?>

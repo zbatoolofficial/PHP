@@ -202,8 +202,10 @@
     <p class="text-center  text-dark">Porro eveniet, autem ipsam vitae consequatur!</p>
 <!--  -->
 <div class="container">
+   <form action="function.php" method = "POST">  
   <div class="row text-center">
-    <div class="col-md-6">
+  
+  <div class="col-md-6">
       <div class="form-floating mb-3">
         <input type="text" class="form-control" id="floatingInput" placeholder="First name">
         <label for="floatingInput">First name</label>
@@ -229,8 +231,9 @@
     <label for="floatingTextarea2">Message</label>
   </div>
   <div class="container text-center  ">
-  <button type="button" class="btn btn-warning btn-lg mt-3 mb-3">Send A Message</button></div>
+  <button type="submit" class="btn btn-warning btn-lg mt-3 mb-3">Send A Message</button></div>
    </div>
+</form>
   <!--  -->
 </div>
 
