@@ -1,4 +1,5 @@
 <?php
+
 if (isset($_POST['formsubmit'])) {
     $name = $_POST['username'];
     $email = $_POST['useremail'];
@@ -6,14 +7,18 @@ if (isset($_POST['formsubmit'])) {
     echo $name;
     echo $email;
     echo $pass;
+    //    echo '<script type="text/javascript">';
+    // echo ' alert("Not Submit form")';  //not showing an alert box.
+    // echo '</script>';
 } else{
-   
-    alert("Hello World");
+ 
+    // alert("Hello World");
 
-    function alert($msg) {
-        echo "<script type='text/javascript'>alert('$msg');</script>";
-    }
+    // function alert($msg) {
+    //     echo "<script type='text/javascript'>alert('$msg');</script>";
+    // }
 }
+
 // $name = "OK";
 // echo "$name";
 // if(isset($_POST['formsubmit'])){
