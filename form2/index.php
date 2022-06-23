@@ -38,7 +38,7 @@ $Query = mysqli_query($conn, $Select);
                         <th scope="col">User Email</th>
                         <th scope="col">Handle</th>
                     </tr>
-                </thead>
+                </thead> 
                 <tbody>
                     <?php
                     while ($row = mysqli_fetch_array($Query)) {
