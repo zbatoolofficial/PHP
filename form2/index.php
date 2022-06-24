@@ -36,7 +36,8 @@ $Query = mysqli_query($conn, $Select);
                         <th scope="col">ID</th>
                         <th scope="col">User Name</th>
                         <th scope="col">User Email</th>
-                        <th scope="col">Handle</th>
+                        <th scope="col">Action</th>
+                        
                     </tr>
                 </thead> 
                 <tbody>
@@ -49,7 +50,8 @@ $Query = mysqli_query($conn, $Select);
                             <th scope="row"><?php echo $row['id']?></th>
                             <td><?php echo $row['user_name']?></td>
                             <td><?php echo $row['user_email']?></td>
-                            <td>@mdo</td>
+                            <td><a href="edit.php?edit_id=<?php echo $row['id']?>"><button class="btn btn-primary">Edit</button></a>
+                            <a href="del.php?del_id=<?php echo $row['id']?>"><button class="btn btn-danger">Delete</button></a></td>
                         </tr>
                     <?php
                     }

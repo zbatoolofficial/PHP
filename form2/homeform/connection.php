@@ -13,15 +13,3 @@ if (isset($_POST['formsubmit'])) {
         echo mysqli_error($conn);
     }
 }
-if (isset($_REQUEST['formupdate'])) {
-    $name =  $_POST['username'];
-    $email =   $_POST['useremail'];
-    $user_id = $_REQUEST['user_id'];
-    $update = "UPDATE `signup` SET `user_name`='$name',`user_email`='$email' WHERE id= '$user_id'";
-    $query = mysqli_query($conn, $update);
-    if ($query) {
-        header('location: index.php');
-    } else {
-        echo "Not Update";
-    }
-}
