@@ -6,6 +6,7 @@
         <div class="col-md-6 offset-3">
             <center>
                 <h3>Login Form</h3>
+                <div class="alert alert-danger">not</div>
             </center>
             <form action="Function.php" method="POST">
                 <label for="" class="w-100">
@@ -16,7 +17,7 @@
                     Enter Your password
                     <input type="password" class="form-control" name="userpassword" placeholder="Enter Your Name">
                 </label>
-                <input type="submit" name="formsubmit" class="btn btn-primary mt-2">
+                <input type="submit" name="loginform" class="btn btn-primary mt-2">
             </form>
         </div>
     </div>

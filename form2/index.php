@@ -1,4 +1,6 @@
-<?php include_once 'header.php';
+<?php
+session_start($_SESSION['user_id']);
+include_once 'header.php';
 include_once 'connection.php';
 $Select = "SELECT * FROM signup";
 $Query = mysqli_query($conn, $Select);

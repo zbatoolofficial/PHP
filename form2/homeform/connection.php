@@ -1,15 +1,11 @@
 <?php
-include_once 'connection.php';
-if (isset($_POST['formsubmit'])) {
-    $name =  $_POST['username'];
-    $email = $_POST['useremail'];
-    $password = $_POST['userpassword'];
-    $pass = password_hash($password, PASSWORD_DEFAULT);
-    $INSERT = "INSERT INTO signup (user_name,user_email,user_password) VALUES ('$name','$email','$pass')";
-    $query = mysqli_query($conn, $INSERT);
-    if ($query) {
-        header('location:login.php');
-    } else {
-        echo mysqli_error($conn);
-    }
+$dbname = '';
+$dbuser = 'root';
+$dbpass = '';
+$dbhost = 'localhost';
+$conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
+if ($conn) {
+    echo "Connect";
+} else {
+    echo "Not Connect";
 }
