@@ -39,17 +39,17 @@ if (isset($_REQUEST['formupdate'])) {
         echo "Not Update";
     }
 }
-if (isset($_REQUEST['loginform'])){
-    $email = $_REQUEST['useremail'];
-    $password = $_REQUEST['userpassword'];
-    $Select = "SELECT * FROM signup WHERE user_email = '$email' AND user_password = '$password'";
-    $query = mysqli_query($conn, $Select);
-    $row = mysqli_fetch_array($query);
-    if (mysqli_num_rows($query) > 0){
-        // echo $row['user_name']."welcom new ";
-        $_SESSION['user_id'] = $row['id'];
-        header("location:login.php");
-    }else{
-        echo "not";
-    }
-}
+// if (isset($_REQUEST['loginform'])){
+//     $email = $_REQUEST['useremail'];
+//     $password = $_REQUEST['userpassword'];
+//     $Select = "SELECT * FROM signup WHERE user_email = '$email' AND user_password = '$password'";
+//     $query = mysqli_query($conn, $Select);
+//     $row = mysqli_fetch_array($query);
+//     if (mysqli_num_rows($query) > 0){
+//         // echo $row['user_name']."welcom new ";
+//         $_SESSION['user_id'] = $row['id'];
+//         header("location:login.php");
+//     }else{
+//         echo "not";
+//     }
+// }

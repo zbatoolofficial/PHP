@@ -1,5 +1,5 @@
 <?php
-session_start($_SESSION['user_id']);
+// session_start($_SESSION['user_id']);
 include_once 'header.php';
 include_once 'connection.php';
 $Select = "SELECT * FROM signup";
